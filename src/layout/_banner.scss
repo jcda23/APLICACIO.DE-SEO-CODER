@@ -1,0 +1,29 @@
+.banner {
+  .banner-image {
+    @include hero-image("../img/carpas.jpg");
+    background-attachment: scroll;
+    max-height: 20vh;
+    max-width: $max-width;
+    margin: 1rem auto 6rem auto;
+
+    .banner-image-opacity {
+      .banner-image-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2 {
+          max-height: 20vh;
+          height: 20vh;
+          text-align: center;
+          font-size: 9.5vw;
+          color: $white-color;
+          width: 100%;
+          font-weight: 800;
+          text-transform: uppercase;
+          background-color: $black-alpha-color;
+          color: rgba($white-color, 0.4);
+        }
+      }
+    }
+  }
+}

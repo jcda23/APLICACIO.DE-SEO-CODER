@@ -1,0 +1,23 @@
+.hero-image {
+  @include hero-image("../img/alpinismo7.jpg");
+  background-attachment: scroll;
+
+  .hero-image-opacity {
+    @include flexible(flex, none, center, center);
+    width: 100%;
+    max-height: 450px;
+    min-height: 450px;
+    text-align: center;
+    @include hero-opacity($black-alpha-color);
+
+    .hero-image-content {
+      h2 {
+        font-size: 5vw;
+        color: $white-color;
+      }
+      a {
+        margin-top: 3rem;
+      }
+    }
+  }
+}

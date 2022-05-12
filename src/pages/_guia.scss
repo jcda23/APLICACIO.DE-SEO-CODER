@@ -1,0 +1,35 @@
+.guid-secundaria {
+  background: $black-color;
+
+  .guid-1 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 100px;
+
+    .video-guid {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @extend .size-custom-img;
+      max-height: 100vh;
+      pointer-events: none;
+    }
+
+    h2 {
+      position: relative;
+      color: $white-color;
+      font-size: 3em;
+    }
+
+    p {
+      position: relative;
+      color: $white-color;
+      font-size: 1.2em;
+    }
+  }
+}

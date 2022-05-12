@@ -1,0 +1,36 @@
+.tarjeta {
+  height: 100%;
+  width: 100%;
+  border-radius: 2%;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+  color: $title-color;
+  background: $color-background-body;
+
+  .tarjeta-contenido {
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+  }
+}
+.encabezado img {
+  position: relative;
+  display: block;
+  @extend .size-custom-img;
+  border: thin solid rgba(0, 0, 0, 0.19);
+}
+
+.encabezado::before,
+.encabezado::after {
+  content: "";
+  position: absolute;
+}
+
+@media screen and (min-width: 1024px) {
+  .tarjeta {
+    height: 250px;
+    width: 250px;
+    border-radius: 2%;
+    margin: auto 0;
+    padding: 20px 0;
+  }
+}
